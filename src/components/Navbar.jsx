@@ -9,6 +9,7 @@ const menuItems = [
   { name: "Admission", path: "/admission" },
   { name: "Academics", path: "/academics" },
   { name: "Career", path: "/career" },
+  { name: "Gallery", path: "/gallery" },
   { name: "Major Events", path: "/major-events" },
   { name: "Contact", path: "/contact" },
 ];
@@ -56,12 +57,13 @@ const Navbar = () => {
           </button>
 
           {/* Mobile Heading */}
-          <h1 className="text-base sm:text-lg font-bold mx-auto md:hidden text-center px-8">
+          <h1 className="text-base sm:text-lg font-bold mx-auto md:hidden text-center px-4">
             Carbon Institute of Paramedical Science, Kasganj
           </h1>
 
           {/* Desktop Menu */}
-          <ul className="hidden md:flex space-x-6 ml-auto">
+          <div className="mx-auto flex justify-center">
+          <ul className="hidden md:flex space-x-8 ml-auto ">
             {menuItems.map(({ name, path }) => (
               <li key={name}>
                 <Link to={path} className="hover:text-gray-300">
@@ -69,7 +71,7 @@ const Navbar = () => {
                 </Link>
               </li>
             ))}
-          </ul>
+          </ul></div>
         </div>
       </nav>
 
@@ -96,7 +98,7 @@ const Navbar = () => {
           ))}
         </ul>
       </div>
-
+      
       {/* Overlay behind Sidebar */}
       {isOpen && (
         <div

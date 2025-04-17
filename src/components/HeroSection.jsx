@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 const images = [
-  "https://drive.google.com/file/d/1adrcbpuaZrJtsPLWh9Jx0YF5sDEGQYLb/view?usp=sharing",
+  // "https://drive.google.com/file/d/1adrcbpuaZrJtsPLWh9Jx0YF5sDEGQYLb/view?usp=sharing",
   "https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=1920&q=80",
   "https://images.unsplash.com/photo-1491841550275-ad7854e35ca6?auto=format&fit=crop&w=1920&q=80",
   "https://images.unsplash.com/photo-1491841550275-ad7854e35ca6?auto=format&fit=crop&w=1920&q=80",
@@ -46,12 +46,12 @@ const HeroSection = () => {
         <p className="mt-3 text-lg md:text-xl">
           Empowering students with knowledge, skills, and values for a bright future.
         </p>
-        <Link
+        {/* <Link
           to="/admission"
           className="mt-5 inline-block bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg text-lg"
         >
           Enroll Now
-        </Link>
+        </Link> */}
       </div>
 
   
