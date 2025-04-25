@@ -38,7 +38,7 @@ const Navbar = () => {
       {/* Logo & Heading (Desktop) */}
       <div className="hidden md:flex items-center py-2 pl-4">
         <img
-          src="./logos/red logo.jpeg"
+          src="./public/red logo.jpeg"
           alt="Logo"
           className="h-20 w-auto mr-4 mt-2"
         />
